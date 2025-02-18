@@ -1,137 +1,120 @@
-*{
-    padding: 0;
+* {
+  padding: 0;
 
-    margin: 0;
+  margin: 0;
 
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
-
 
 body {
+  height: 100vh;
 
-    height: 100vh;
+  font-family: "Poppins", serif;
 
-    font-family: "Poppins", serif;
+  font-weight: 500;
 
-    font-weight: 500;
+  font-style: normal;
 
-    font-style: normal;
+  position: relative;
 
-    position: relative;
+  background-image: url(bg.jpg);
 
-    background-image: url(img/bg.jpg);
+  background-size: cover;
 
-    background-size: cover;
-
-    background-position: center;
+  background-position: center;
 }
 
-
 section {
+  display: grid;
 
-    display: grid;
+  place-items: center;
 
-    place-items: center;
+  position: absolute;
 
-    position: absolute;
-    
-    inset: 0;
+  inset: 0;
 
-    overflow-y: auto;
+  overflow-y: auto;
 }
 
 section main {
+  padding: 100px 10px;
 
-    padding: 100px 10px ;
+  display: flex;
 
-    display: flex;
+  flex-direction: column;
 
-    flex-direction: column;
+  gap: 10px;
 
-    gap: 10px;
+  width: 100%;
 
-    width: 100%;
+  max-width: 600px;
 
-    max-width: 600px;
+  justify-content: center;
 
-    justify-content: center;
-
-    align-items: center;
-
+  align-items: center;
 }
 
-section main img{
+section main img {
+  width: 100px;
 
-     width: 100px;
+  border-radius: 50%;
 
-     border-radius: 50%;
+  aspect-ratio: 1;
 
-     aspect-ratio: 1;
-
-     box-shadow: 0 0 5px 1px white;
+  box-shadow: 0 0 5px 1px white;
 }
-
 
 section main h2 {
+  font-weight: 600;
 
-    font-weight: 600;
+  color: white;
 
-    color: white;
-
-    text-shadow: 0 0 1px transparent, 0 1px 2px rgba(0, 0, 0, 0,8);
+  text-shadow: 0 0 1px transparent, 0 1px 2px rgba(0, 0, 0, 0, 8);
 }
-
 
 section main a {
+  display: flex;
 
-    display: flex;
+  width: 100%;
 
-    width: 100%;
+  align-items: center;
 
-    align-items: center;
+  justify-content: center;
 
-    justify-content: center;
+  border: 1px solid white;
 
-    border: 1px solid white;
+  padding: 10px;
 
-    padding: 10px;
+  color: white;
 
-    color: white;
+  text-decoration: none;
 
-    text-decoration: none;
+  border-radius: 5px;
 
-    border-radius: 5px;
+  gap: 20px;
 
-    gap: 20px;
-
-    transition: 0.3s;
+  transition: 0.3s;
 }
-
 
 section main a:hover {
+  background-color: white;
 
-    background-color: white;
-
-    color: #333;
+  color: #333;
 }
-
 
 section main a i {
-    font-size: 1.4em;
+  font-size: 1.4em;
 }
-
 
 section footer {
-    
-    color: white;
-    font-size: 0.7em;
-    padding: 20px;
-    text-shadow: 0 0 1px transparent, 0 1px 2px rgba(0, 0, 0, 0,8);
+  color: white;
+  font-size: 0.7em;
+  padding: 20px;
+  text-shadow: 0 0 1px transparent, 0 1px 2px rgba(0, 0, 0, 0, 8);
 }
 
-
 section footer p a {
-    color: white;
-    font-weight: 600;
-    text-decoration: none;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
 }
